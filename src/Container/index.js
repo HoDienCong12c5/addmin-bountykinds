@@ -1,8 +1,11 @@
+import ModalWrapper from '@/Components/MyModal'
+import ChatBot from '@/Screen/ChatBot'
 import Home from '@/Screen/Home'
 import NFTDetail from '@/Screen/NFTDetail'
 import { Suspense } from 'react'
 import { HashRouter, Route, Routes } from 'react-router-dom'
 import Header from './Header/header'
+// import { dialogflow } from 'actions-on-google';
 //page
 // const Home = React.lazy(() => import('@/Screen/Home'))
 const loading = (
@@ -13,6 +16,7 @@ const loading = (
 const LayoutBasic = () => {
   return (
     <div className=' align-middle m-auto'>
+
       < Header />
       <div className='container basis-2xl m-auto pt-2.5'>
         <Suspense fallback={loading} >
@@ -22,6 +26,8 @@ const LayoutBasic = () => {
           </Routes>
         </Suspense>
       </div>
+      <ChatBot />
+      <ModalWrapper />
     </div >
   )
 }

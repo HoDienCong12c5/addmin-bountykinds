@@ -10,6 +10,9 @@ var initState = {
     accounts: [],
     address: ''
   },
+  globalModal: {
+    show: false
+  },
   pantograph: {
     status: METAMASK_INFO.status.Loading,
     network: 0,

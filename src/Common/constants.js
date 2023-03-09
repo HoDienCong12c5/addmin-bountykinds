@@ -20,3 +20,21 @@ export const METAMASK_INFO = {
     5777: 'Private'
   }
 }
+export const modalConfig = {
+  wrapClassName: '',
+  width: 500,
+  //click over modal to close
+  outsideClose: true,
+  isDisableIcon: false,
+  //show icon close modal
+  showIconClose: true,
+  maskStyle: {},
+  title: null,
+  footer: null,
+  //click esc modal to close
+  enterESC: true
+}
+export const paramModal = {
+  body: null,
+  modalConfig: modalConfig
+}

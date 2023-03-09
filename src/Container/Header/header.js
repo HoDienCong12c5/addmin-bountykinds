@@ -17,6 +17,7 @@ const Header = () => {
           >
             NFTDetail
           </Link>
+
         </div>
       </div>
     )

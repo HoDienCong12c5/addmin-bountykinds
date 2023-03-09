@@ -12,3 +12,8 @@ export const metamaskRedux = createReducer(initState.metamaskRedux, {
     return action.payload
   }
 })
+export const globalModal = createReducer(initState.globalModal, {
+  [KEY_PAGE.SET_MODAL_GLOBAL](state, action) {
+    return action.payload
+  }
+})
